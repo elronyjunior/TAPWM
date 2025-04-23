@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="t">Vamos jogar pedra papel tesoura?</h1>
+    <button onclick="jogar()">Começar</button>
+    <button>Pedra</button>
+    <button>Papel</button>
+    <button>Tesoura</button>
+</body>
+</html>
+<script>
+    var jogando=false
+    function jogar(){
+        jogando=true
+        document.getElementById("t").innerText="escolha umas das opções para jogar comigo"
+        for(let i=1;i<4;++i){
+        setTimeout(function(){
+        document.getElementById("t").innerText=i}
+        ,i * 1000)
+        }
+    }
+
+</script>
