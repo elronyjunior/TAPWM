@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Conversor de Texto</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <form id="form-conversor">
+    <h2>Conversor de Texto</h2>
+
+    <input type="text" id="entrada" class="campo-texto" placeholder="Digite seu texto aqui">
+
+    <div class="grupo-radio">
+      <label><input type="radio" name="opcao" value="upper"> Converter para MAIÚSCULAS</label>
+      <label><input type="radio" name="opcao" value="lower"> Converter para minúsculas</label>
+    </div>
+
+
+    <button type="button" class="btn-aplicar" onclick="converterTexto()">Aplicar</button>
+
+    <div id="saida" class="caixa-resultado"></div>
+  </form>
+</body>
+</html>

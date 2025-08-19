@@ -1,0 +1,86 @@
+body {
+    font-family: Verdana, sans-serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#form-conversor {
+    background: #e0e0e0;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.campo-texto {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #D6DAC8;
+    border-radius: 6px;
+}
+
+.btn-aplicar {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    background: #7D8D86;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.grupo-radio, .grupo-checkbox {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    text-align: left;
+}
+
+.grupo-radio input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #D6DAC8;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+}
+
+.grupo-radio input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7D8D86;
+    border-radius: 50%;
+}
+
+label {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.caixa-resultado {
+    width: 100%;
+    min-height: 30px;
+    margin: 10px 0;
+    padding: 8px;
+    border: 2px solid #D6DAC8;
+    border-radius: 6px;
+    text-align: left;
+    background: #fff;
+}
